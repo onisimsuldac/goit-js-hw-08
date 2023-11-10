@@ -8,6 +8,7 @@ player.on('timeupdate', function (data) {
   localStorage.setItem('videoplayer-current-time', data.seconds);
 });
 
+
 const savedTime = localStorage.getItem('videoplayer-current-time');
 if (savedTime) {
   player.setCurrentTime(parseFloat(savedTime));
